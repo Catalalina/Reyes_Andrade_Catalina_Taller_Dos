@@ -1,0 +1,160 @@
+.product {
+  position: relative;
+  text-align: center;
+  margin-top: 23%;
+}
+
+.product__line {
+  font-weight: 900;
+}
+
+.product__title {
+  font-size: 22pt;
+  font-weight: 300;
+}
+
+.product__info {
+  font-size: 18pt;
+  color: #b8b8b8;
+  font-weight: 300;
+}
+
+.product__product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 5%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.product__title__one {
+  color: transparent;
+}
+
+.product__title__two {
+  color: transparent;
+}
+
+.product__title__three {
+  color: transparent;
+}
+
+.product__one {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.product__one:hover {
+  -webkit-filter: blur(10px);
+}
+
+.product__two {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.product__two:hover {
+  -webkit-filter: blur(10px);
+}
+
+.product__three {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.product__three:hover {
+  -webkit-filter: blur(10px);
+}
+
+.product__four {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.product__four:hover {
+  -webkit-filter: blur(10px);
+}
+
+.product__five {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.product__five:hover {
+  -webkit-filter: blur(10px);
+}
+
+@media (min-width: 980px) {
+  .product__one {
+    width: 50%;
+  }
+  .product__two {
+    width: 50%;
+  }
+  .product__three {
+    width: 25%;
+  }
+  .product__four {
+    width: 50%;
+  }
+  .product__five {
+    width: 25%;
+  }
+  .product__title__one {
+    margin-left: 5%;
+    padding-top: 15px;
+    margin-top: 0%;
+    position: absolute;
+    text-align: center;
+    color: #b8b8b8;
+    font-weight: 300;
+    background: white;
+    width: 6%;
+    height: 3%;
+  }
+  .product__title__two {
+    margin-left: 95%;
+    padding-top: 15px;
+    margin-top: 15%;
+    position: absolute;
+    text-align: center;
+    color: #b8b8b8;
+    font-weight: 300;
+    background: white;
+    width: 6%;
+    height: 3%;
+  }
+  .product__title__three {
+    margin-left: 25%;
+    padding-top: 15px;
+    margin-top: 30%;
+    position: absolute;
+    text-align: center;
+    color: #b8b8b8;
+    font-weight: 300;
+    background: white;
+    width: 10%;
+    height: 3%;
+  }
+}
+
+@media (max-width: 1170px) {
+  .product {
+    margin-top: 30%;
+  }
+}
+
+@media (max-width: 520px) {
+  .product {
+    margin-top: 50%;
+  }
+}
+
+@media (max-width: 300px) {
+  .product {
+    margin-top: 150%;
+  }
+}
+/*# sourceMappingURL=product.css.map */

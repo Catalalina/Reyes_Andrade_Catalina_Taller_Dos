@@ -1,0 +1,66 @@
+.choose{
+    position:relative;
+    text-align: center;
+    margin-top: 6%;
+}
+.choose__line{
+    font-weight: 900;
+}
+.choose__title{
+    font-size: 22pt;
+    font-weight: 300;
+}
+
+.choose__text{
+    font-size: 18pt;
+    color: rgb(184, 184, 184); 
+    font-weight: 300;
+ 
+}
+
+#choose__product{
+    width: 100%;
+    margin-top: 5%;
+    
+}
+
+.choose__hashtag{
+    position: absolute;
+    font-size: 10pt;
+    font-weight: 300;
+    color: white;
+    top: 80%;
+    left: 8%;
+}
+
+.choose__info{
+    position: absolute;
+    text-align: left;
+    font-size: 12pt;
+    font-weight: 400;
+    color: white;
+    top: 85%;
+    left: 8%;
+}
+
+@media (min-width: 980px){
+    .choose__hashtag{
+        position: absolute;
+        font-size: 22pt;
+        font-weight: 300;
+        color: white;
+        top: 80%;
+        left: 8%;
+    }
+    
+    .choose__info{
+        position: absolute;
+        text-align: left;
+        font-size: 30pt;
+        font-weight: 400;
+        color: white;
+        top: 85%;
+        left: 8%;
+    }
+        
+  }
