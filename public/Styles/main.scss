@@ -7,6 +7,7 @@
 @import "./information.scss";
 @import "./sigin.scss";
 @import "./footer.scss";
+@import "./headerStore.scss";
 
 $font:'Montserrat', sans-serif;
 
@@ -20,6 +21,7 @@ $font:'Montserrat', sans-serif;
     position: absolute;
     transition: 0.5s ease-in-out;
 }
+
 
 body{
     margin: 0;
@@ -44,6 +46,11 @@ li{
     width: 100%;
     height: 700px;
     }
+
+    .header__Store{
+        width: 100%;
+        height: 700px;
+        }
 }
 
 @media (max-width: 1370px){
@@ -52,6 +59,11 @@ li{
     height: 650px;
     }
 
+    .header__Store{
+        width: 100%;
+        height: 650px;
+        }
+
 }
 
 @media (max-width: 1270px){
@@ -59,6 +71,11 @@ li{
     width: 100%;
     height: 600px;
     }
+
+    .header__Store{
+        width: 100%;
+        height: 600px;
+        }
 }
 
 @media (max-width: 1170px){
@@ -67,6 +84,11 @@ li{
     height: 500px;
     }
 
+    .header__Store{
+        width: 100%;
+        height: 500px;
+        }
+
 }
 
 @media (max-width: 1070px){
@@ -74,6 +96,11 @@ li{
     width: 100%;
     height: 400px;
     }
+
+    .header__Store{
+        width: 100%;
+        height: 400px;
+        }
 }
 
 @media (max-width: 770px){
@@ -82,6 +109,11 @@ li{
     height: 300px;
     }
 
+    .header__Store{
+        width: 100%;
+        height: 300px;
+        }
+
 }
 
 @media (max-width: 550px){
@@ -89,6 +121,11 @@ li{
     width: 100%;
     height: 200px;
     }
+
+    .header__Store{
+        width: 100%;
+        height: 200px;
+        }
 }
 
 @media (max-width: 300px){
@@ -96,6 +133,13 @@ li{
     width: 100%;
     height: 100px;
     }
+
+    .header__Store{
+        width: 100%;
+        height: 100px;
+        }
+
+    
 }
 
 
