@@ -1483,6 +1483,12 @@
   margin: 0%;
 }
 
+.description__info__nombre {
+  margin: 0%;
+  font-size: 0%;
+  padding: 0%;
+}
+
 #header {
   background-image: url(../Imagenes/fondo.jpg);
   background-repeat: no-repeat;
