@@ -1,0 +1,23 @@
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.products__pro{
+    width: 100%;
+    display: inline-block;
+}
+
+.products__img:hover {
+    -webkit-filter: blur(10px);
+  }
+
+.products__title{
+position: absolute;
+}
+
+.products__price{
+    position: absolute;
+    }
+    

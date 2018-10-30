@@ -48,7 +48,7 @@ app.get("/", function (request, response) {
 //app.get("/",function())
 
 app.get("/store", function (request, response) {
-
+    var link = request.query.product__name;
     products.find({}).toArray(function(err, docs){
         if(err){
             console.log(err);
@@ -56,11 +56,32 @@ app.get("/store", function (request, response) {
         }
 
         var context = {products: docs};
-        response.render("store", context);
+
+        var product = findProduct(docs,'nombre',link);
+
+        if(product !== null){
+            response.render("description", product);
+        }else{
+            response.render("store", context);
+        }
+
     });
 
    
 });
+
+
+function findProduct(array,nombre, value){
+    for (let index = 0; index < array.length; index++) {
+        
+        if (array[index][nombre] === value) {
+            return array[index];
+        }
+        
+    }
+
+    return null;
+}
 
 
 

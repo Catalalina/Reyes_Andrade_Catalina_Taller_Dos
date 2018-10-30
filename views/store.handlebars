@@ -13,14 +13,7 @@
 
 
 <body>
-    <header class="header__Store">
-        <article class="header__Store__info">
-            <p class="header__Store__line">________</p>
-            <p class="header__Store__title">{{title}}</p>
-            <p class="header__Store__text">{{text}}</p>
-        </article>
-    </header>
-
+  
      <nav class="nav__Store">
         <img class="nav__Store__logo" src="./Imagenes/logo.png" alt="upsi">
         <ul class="nav__Store__banner">
@@ -29,49 +22,65 @@
             <a href="store.handlebars"><li class="nav__Store__link">Products</li></a>
             <a href="#"><li class="nav__Store__link">Contact</li></a>
         </ul>
+        <img class="nav__Store__car" src="./Imagenes/products/carrito.png" alt="upsi">
     </nav>
 
-    <section>
-        <article>   
-            <div>
-                <h1>Type of product</h1>
-                <ul>
-                    <li>Tea</li>
-                    <li>Veggiedrink</li>
-                    <li>Snacks</li>
-                    <li>All</li>
+    <header class="header__Store">
+        <article class="header__Store__info">
+            <p class="header__Store__line">________</p>
+            <p class="header__Store__title">PRODUCTS</p>
+            <p class="header__Store__text">Curious about a product? Give it a try! <br> Choose a product, explore and then drink It :)</p>
+        </article>
+    </header>
+
+  
+
+    <section class="section">
+        <article class="filter">   
+            <div class="filter__type">
+                <h1 class="filter__type__title">Type of product</h1>
+                <ul type="none" class="filter__type__list">
+                    <li class="filter__type__link">Tea</li>
+                    <li class="filter__type__link">Veggiedrink</li>
+                    <li class="filter__type__link">Snacks</li>
+                    <li class="filter__type__link">All</li>
                 </ul>
             </div>
-             <div>
-                <h1>Color/Taste</h1>
-                <ul>
-                    <li>Blue</li>
-                    <li>Green</li>
-                    <li>Pink</li>
-                    <li>Purple</li>
-                    <li>Black</li>
-                    <li>Yellow</li>
-                    <li>Red</li>
-                    <li>Orange</li>
-                    <li>White</li>
+             <div class="filter__type">
+                <h1 class="filter__type__title">Color/Taste</h1>
+                <ul type="none" class="filter__type__list">
+                    <li class="filter__type__link">Blue</li>
+                    <li class="filter__type__link">Green</li>
+                    <li class="filter__type__link">Pink</li>
+                    <li class="filter__type__link">Purple</li>
+                    <li class="filter__type__link">Black</li>
+                    <li class="filter__type__link">Yellow</li>
+                    <li class="filter__type__link">Red</li>
+                    <li class="filter__type__link">Orange</li>
+                    <li class="filter__type__link">White</li>
                 </ul>
             </div>
-               <div>
-                <h1>Sort by</h1>
-                <ul>
-                    <li>Favorites</li>
-                    <li>Price</li>
+               <div class="filter__type">
+                <h1 class="filter__type__title">Sort by</h1>
+                <ul type="none" class="filter__type__list">
+                    <li class="filter__type__link">Favorites</li>
+                    <li class="filter__type__link">Price</li>
                 </ul>
             </div>
 
         </article>
         
 
-        <article>
+        <article class="products">
             {{#each products}}
-            <img src={{imagen}} alt="upsi">
-            <h1>{{nombre}}</h1>
-            <h1>{{precio}}</h1>
+            <div class="products__pro">
+           <a href="/store/?product__name={{nombre}}"><img class="products__img" src={{imagen}} alt="upsi"></a> 
+            <div> 
+            <h1 class="products__title">{{nombre}}</h1>
+            <h1 class="products__price">{{precio}}</h1>
+            </div>
+           
+            </div>
             {{/each}}
         </article> 
  

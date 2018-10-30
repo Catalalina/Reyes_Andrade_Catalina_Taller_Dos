@@ -88,6 +88,7 @@
 .nav__logo {
   margin-top: 5%;
   width: 8%;
+  height: auto;
 }
 
 .nav__link {
@@ -113,6 +114,60 @@
     margin-right: 30px;
     margin-left: 30px;
     font-size: 18px;
+  }
+}
+
+.nav__Store {
+  text-align: center;
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0%;
+  padding: 0%;
+  position: fixed;
+  width: 100%;
+}
+
+.nav__Store__logo {
+  margin-left: 10%;
+  width: 8%;
+}
+
+.nav__Store__link {
+  font-weight: 300;
+  display: inline-block;
+  text-shadow: 0px 0px 10px RGBA(0, 0, 0, 0.1);
+  color: white;
+  padding-right: 2%;
+  font-size: 10px;
+}
+
+.nav__Store__banner {
+  margin-left: 5%;
+  width: 80%;
+  margin-top: 1.5%;
+}
+
+@media (min-width: 980px) {
+  .nav__Store__logo {
+    margin: 1%;
+    margin-left: 10%;
+    width: 8%;
+    height: auto;
+  }
+  .nav__Store__link {
+    font-weight: 300;
+    display: inline-block;
+    text-shadow: 0px 0px 10px RGBA(0, 0, 0, 0.1);
+    color: white;
+    padding-right: 10%;
+    font-size: 18px;
+  }
+  .nav__Store__car {
+    margin: 1%;
+    padding-right: 10%;
+    height: auto;
   }
 }
 
@@ -449,6 +504,32 @@
   .product {
     margin-top: 150%;
   }
+}
+
+.products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+}
+
+.products__pro {
+  width: 100%;
+  display: inline-block;
+}
+
+.products__img:hover {
+  -webkit-filter: blur(10px);
+}
+
+.products__title {
+  position: absolute;
+}
+
+.products__price {
+  position: absolute;
 }
 
 .choose {
@@ -1042,7 +1123,7 @@
 }
 
 .header__Store__info {
-  margin-top: 20%;
+  padding-top: 20%;
   margin-left: 8%;
   color: white;
   margin-bottom: 10%;
@@ -1051,7 +1132,7 @@
 .header__Store__title {
   font-weight: 400;
   font-size: 18pt;
-  text-shadow: 0px 0px 10px RGBA(0, 0, 0, 0.1);
+  text-shadow: 0px 0px 10px RGBA(0, 0, 0, 0.5);
 }
 
 .header__Store__line {
@@ -1123,6 +1204,26 @@
   }
 }
 
+.filter {
+  width: 20%;
+  color: black;
+  padding-left: 2%;
+  padding-top: 5%;
+}
+
+.filter__type {
+  padding-top: 5%;
+}
+
+.filter__type__tittle {
+  font-size: 18pt;
+  font-weight: 300;
+}
+
+.filter__type__link {
+  margin-top: 5%;
+}
+
 #header {
   background-image: url(../Imagenes/fondo.jpg);
   background-repeat: no-repeat;
@@ -1133,6 +1234,12 @@
   position: absolute;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
+}
+
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 body {

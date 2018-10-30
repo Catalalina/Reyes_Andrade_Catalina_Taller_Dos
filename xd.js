@@ -60,10 +60,10 @@
 
     {
         nombre: "VANILLA ALMOND DRINK",
-        imagen: "/Imagenes/products/milkPupleFront.jpg",
-        imagenDos: "/Imagenes/products/milkPupleBack.jpg",
-        imagenTres: "/Imagenes/products/milkPupleLeft.jpg",
-        imagenCuatro: "/Imagenes/products/milkPupleRight.jpg",
+        imagen: "/Imagenes/productsmilkPurpleFront.jpg",
+        imagenDos: "/Imagenes/products/milkPurpleBack.jpg",
+        imagenTres: "/Imagenes/products/milkPurpleLeft.jpg",
+        imagenCuatro: "/Imagenes/products/milkPurpleRight.jpg",
         precio: 9400,
         favorito: 10,
         color: "Puple",

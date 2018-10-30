@@ -1,13 +1,16 @@
 @import "./header.scss";
 @import "./nav.scss";
+@import "./navStore.scss";
 @import "./publishing.scss";
 @import "./product.scss";
+@import "./products.scss";
 @import "./choose.scss";
 @import "./moments.scss";
 @import "./information.scss";
 @import "./sigin.scss";
 @import "./footer.scss";
 @import "./headerStore.scss";
+@import "./filter.scss";
 
 $font:'Montserrat', sans-serif;
 
@@ -20,6 +23,10 @@ $font:'Montserrat', sans-serif;
     height: 700px;
     position: absolute;
     transition: 0.5s ease-in-out;
+}
+
+.section{
+    display: flex;
 }
 
 
