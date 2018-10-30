@@ -10,7 +10,17 @@
     width: 100%;
     z-index: 50000;
 }
-
+.nav__cont{
+    text-align: center center;
+    font-weight: 900;
+    color: black;
+    background: white;
+    border-radius:100px; 
+    margin-right: 20%;
+    width: 3%;
+    height: auto;
+    font-size: 20px;
+}
 
 .nav__Store__logo{
     margin-left: 10%;
@@ -50,7 +60,6 @@
 
     .nav__Store__car{
         margin: 1%;
-        padding-right: 10%;
         height: auto;
     }
   }

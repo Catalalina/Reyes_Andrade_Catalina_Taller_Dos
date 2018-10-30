@@ -41,6 +41,7 @@ app.get("/", function (request, response) {
         title: 'A VIBRANT & EXOTIC TEA',
 
     }
+
     response.render("index", title);
 });
 
@@ -52,6 +53,7 @@ app.get("/store", function (request, response) {
     var link = request.query.product__name;
     var filterType = request.query.tipo;
     var filterColor = request.query.color;
+    var filterP = request.query.p;
     console.log(filterType);
     if (filterType !== null && filterType !== '' && filterType !== undefined) {
         products.find({
@@ -94,11 +96,35 @@ app.get("/store", function (request, response) {
             if (product !== null) {
                 response.render("description", product);
             } else {
+                
                 response.render("store", context);
             }
 
         });
-    }else {
+    } else if (filterP !== null && filterP !== '' && filterP !== undefined) {
+        products.find({
+            p: filterP,
+        }).toArray(function (err, docs) {
+            if (err) {
+                console.log(err);
+                return;
+            }
+
+            var context = {
+                products: docs
+            };
+
+            var product = findProduct(docs, 'nombre', link);
+
+            if (product !== null) {
+                response.render("description", product);
+            } else {
+                
+                response.render("store", context);
+            }
+
+        });
+    } else {
         products.find({}).toArray(function (err, array) {
             if (err) {
                 console.log(err);
@@ -115,6 +141,7 @@ app.get("/store", function (request, response) {
                 response.render("description", product);
             } else {
                 response.render("store", context1);
+              
             }
 
         });

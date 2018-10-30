@@ -492,7 +492,7 @@
   text-align: right;
   margin-left: 70%;
   position: absolute;
-  top: 70%;
+  top: 65%;
 }
 
 .products__price::before {
@@ -501,6 +501,18 @@
 
 .products__price::after {
   content: "-";
+}
+
+.products__button {
+  color: #424242;
+  font-size: 2vh;
+  font-weight: 300;
+  background: transparent;
+  text-align: right;
+  border-radius: 10px;
+  margin-left: 30%;
+  position: absolute;
+  top: 75%;
 }
 
 .products__info {
@@ -1276,6 +1288,18 @@
   z-index: 50000;
 }
 
+.nav__cont {
+  text-align: center center;
+  font-weight: 900;
+  color: black;
+  background: white;
+  border-radius: 100px;
+  margin-right: 20%;
+  width: 3%;
+  height: auto;
+  font-size: 20px;
+}
+
 .nav__Store__logo {
   margin-left: 10%;
   width: 8%;
@@ -1313,7 +1337,6 @@
   }
   .nav__Store__car {
     margin: 1%;
-    padding-right: 10%;
     height: auto;
   }
 }

@@ -36,7 +36,7 @@
     text-align: right;
     margin-left: 70%;
     position: absolute;
-    top: 70%;
+    top: 65%;
     }
 
     .products__price::before{
@@ -46,6 +46,19 @@
         .products__price::after{
             content: "-";
             }
+
+
+.products__button{
+    color: rgb(66, 66, 66);
+    font-size: 2vh;
+    font-weight: 300;
+    background: transparent;
+    text-align: right;
+    border-radius: 10px;
+    margin-left: 30%;
+    position: absolute;
+    top: 75%;
+}
 
 .products__info{
     position: relative;
