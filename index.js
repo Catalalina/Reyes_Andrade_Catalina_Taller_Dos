@@ -47,37 +47,91 @@ app.get("/", function (request, response) {
 //otras cosas
 //app.get("/",function())
 
+
 app.get("/store", function (request, response) {
     var link = request.query.product__name;
-    products.find({}).toArray(function(err, docs){
-        if(err){
-            console.log(err);
-            return;
-        }
+    var filterType = request.query.tipo;
+    var filterColor = request.query.color;
+    console.log(filterType);
+    if (filterType !== null && filterType !== '' && filterType !== undefined) {
+        products.find({
+            tipo: filterType,
+        }).toArray(function (err, docs) {
+            if (err) {
+                console.log(err);
+                return;
+            }
 
-        var context = {products: docs};
+            var context = {
+                products: docs
+            };
 
-        var product = findProduct(docs,'nombre',link);
+            var product = findProduct(docs, 'nombre', link);
 
-        if(product !== null){
-            response.render("description", product);
-        }else{
-            response.render("store", context);
-        }
+            if (product !== null) {
+                response.render("description", product);
+            } else {
+                response.render("store", context);
+            }
 
-    });
+        });
 
-   
+    }else if (filterColor !== null && filterColor !== '' && filterColor !== undefined) {
+        products.find({
+            color: filterColor,
+        }).toArray(function (err, docs) {
+            if (err) {
+                console.log(err);
+                return;
+            }
+
+            var context = {
+                products: docs
+            };
+
+            var product = findProduct(docs, 'nombre', link);
+
+            if (product !== null) {
+                response.render("description", product);
+            } else {
+                response.render("store", context);
+            }
+
+        });
+    }else {
+        products.find({}).toArray(function (err, array) {
+            if (err) {
+                console.log(err);
+                return;
+            }
+
+            var context1 = {
+                products: array
+            };
+
+            var product = findProduct(array, 'nombre', link);
+
+            if (product !== null) {
+                response.render("description", product);
+            } else {
+                response.render("store", context1);
+            }
+
+        });
+    }
+
+
+
 });
 
 
-function findProduct(array,nombre, value){
+function findProduct(array, nombre, value) {
     for (let index = 0; index < array.length; index++) {
-        
+
         if (array[index][nombre] === value) {
             return array[index];
         }
-        
+
     }
 
     return null;

@@ -1,0 +1,39 @@
+.filter{
+    position: fixed;
+    color: black;
+    padding-left: 3%;
+    top: 25%;
+    z-index: 0;
+}
+
+.filter__type{
+    padding-top: 5%;
+}
+
+.filter__type__tittle{
+    font-size: 18pt;
+    font-weight: 300;
+    
+}
+
+.filter__type__link{
+    margin-top: 5%;
+    color: black;
+    text-decoration: none;
+    text-emphasis: none;
+}
+
+.filter__type__link:hover{
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.filter__type__link:visited {
+    color: rgb(167, 167, 167);
+    text-decoration: none;
+}
+
+.filter__type__link:active{
+    color: rgb(167, 167, 167);
+    text-decoration: none;
+}

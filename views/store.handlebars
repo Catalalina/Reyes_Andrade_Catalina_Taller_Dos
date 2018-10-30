@@ -23,6 +23,7 @@
             <a href="#"><li class="nav__Store__link">Contact</li></a>
         </ul>
         <img class="nav__Store__car" src="./Imagenes/products/carrito.png" alt="upsi">
+        <h1 style="color:white" class="nav__cont"></h1>
     </nav>
 
     <header class="header__Store">
@@ -33,31 +34,30 @@
         </article>
     </header>
 
-  
 
     <section class="section">
         <article class="filter">   
             <div class="filter__type">
                 <h1 class="filter__type__title">Type of product</h1>
                 <ul type="none" class="filter__type__list">
-                    <li class="filter__type__link">Tea</li>
-                    <li class="filter__type__link">Veggiedrink</li>
-                    <li class="filter__type__link">Snacks</li>
-                    <li class="filter__type__link">All</li>
+                    <a href="/store?tipo=tea"><li class="filter__type__link">Tea</li></a> 
+                    <a href="/store?tipo=milk"><li class="filter__type__link">Veggiedrink</li></a>
+                    <a href="/store?tipo=snack"><li class="filter__type__link">Snacks</li></a>
+                   <a href="/store?tipo="> <li class="filter__type__link">All</li></a>
                 </ul>
             </div>
              <div class="filter__type">
                 <h1 class="filter__type__title">Color/Taste</h1>
                 <ul type="none" class="filter__type__list">
-                    <li class="filter__type__link">Blue</li>
-                    <li class="filter__type__link">Green</li>
-                    <li class="filter__type__link">Pink</li>
-                    <li class="filter__type__link">Purple</li>
-                    <li class="filter__type__link">Black</li>
-                    <li class="filter__type__link">Yellow</li>
-                    <li class="filter__type__link">Red</li>
-                    <li class="filter__type__link">Orange</li>
-                    <li class="filter__type__link">White</li>
+                    <a href="/store?color=blue"><li class="filter__type__link">Blue</li></a>
+                    <a href="/store?color=green"><li class="filter__type__link">Green</li></a>
+                    <a href="/store?color=pink"><li class="filter__type__link">Pink</li></a>
+                   <a href="/store?color=purple"><li class="filter__type__link">Purple</li></a> 
+                    <a href="/store?color=black"><li class="filter__type__link">Black</li></a>
+                    <a href="/store?color=yellow"><li class="filter__type__link">Yellow</li></a>
+                    <a href="/store?color=red"><li class="filter__type__link">Red</li></a>
+                    <a href="/store?color=orange"><li class="filter__type__link">Orange</li></a>
+                    <a href="/store?color=white"><li class="filter__type__link">White</li></a>
                 </ul>
             </div>
                <div class="filter__type">
@@ -79,6 +79,7 @@
             <div class="products__pro">
             <h1 class="products__title">{{nombre}}</h1>
             <h1 class="products__price">{{precio}}</h1>
+            <button class="products__button">Buy</button>
             </div>
             </div>
             {{/each}}
@@ -97,6 +98,7 @@
         <p class="footer__text">personal data protection policy</p>
         <img class="footer__logo" src="./Imagenes/logo.png" alt="upsi">
     </footer>
+    <script src="./car.js"></script>
 </body>
 
 </html>

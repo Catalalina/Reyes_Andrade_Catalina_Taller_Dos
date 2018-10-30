@@ -40,8 +40,12 @@
     }
 
     .products__price::before{
-        content: "$";
+        content: "-$";
         }
+
+        .products__price::after{
+            content: "-";
+            }
 
 .products__info{
     position: relative;
