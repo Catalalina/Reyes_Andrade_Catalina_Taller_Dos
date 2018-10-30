@@ -1,11 +1,15 @@
 .products{
     display: flex;
+    width: 100%;
     flex-wrap: wrap;
+    padding-top: 15%;
     text-align: center;
+    padding-left: 20%;
 }
 
 .products__pro{
     width: 100%;
+    padding-top: 10%;
     display: inline-block;
 }
 
@@ -14,10 +18,38 @@
   }
 
 .products__title{
-position: absolute;
+    color: black;
+    font-size: 5vh;
+    width: 30%;
+    font-weight: 300;
+    text-align: right;
+    margin-left: 10%;
+    position: absolute;
+    top: 20%;
+    
 }
 
 .products__price{
+    color: rgb(66, 66, 66);
+    font-size: 2vh;
+    font-weight: 300;
+    text-align: right;
+    margin-left: 70%;
     position: absolute;
+    top: 70%;
     }
+
+    .products__price::before{
+        content: "$";
+        }
+
+.products__info{
+    position: relative;
+    text-align: center;
+    padding-left: 5%;
+}
+
+.products__img{
+   width: 100%;
+}
     

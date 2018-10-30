@@ -117,60 +117,6 @@
   }
 }
 
-.nav__Store {
-  text-align: center;
-  background: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0%;
-  padding: 0%;
-  position: fixed;
-  width: 100%;
-}
-
-.nav__Store__logo {
-  margin-left: 10%;
-  width: 8%;
-}
-
-.nav__Store__link {
-  font-weight: 300;
-  display: inline-block;
-  text-shadow: 0px 0px 10px RGBA(0, 0, 0, 0.1);
-  color: white;
-  padding-right: 2%;
-  font-size: 10px;
-}
-
-.nav__Store__banner {
-  margin-left: 5%;
-  width: 80%;
-  margin-top: 1.5%;
-}
-
-@media (min-width: 980px) {
-  .nav__Store__logo {
-    margin: 1%;
-    margin-left: 10%;
-    width: 8%;
-    height: auto;
-  }
-  .nav__Store__link {
-    font-weight: 300;
-    display: inline-block;
-    text-shadow: 0px 0px 10px RGBA(0, 0, 0, 0.1);
-    color: white;
-    padding-right: 10%;
-    font-size: 18px;
-  }
-  .nav__Store__car {
-    margin: 1%;
-    padding-right: 10%;
-    height: auto;
-  }
-}
-
 .publishing {
   margin-top: 38%;
   background: url(../Imagenes/publicidad.jpg) no-repeat;
@@ -510,13 +456,17 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-top: 15%;
   text-align: center;
+  padding-left: 20%;
 }
 
 .products__pro {
   width: 100%;
+  padding-top: 10%;
   display: inline-block;
 }
 
@@ -525,11 +475,38 @@
 }
 
 .products__title {
+  color: black;
+  font-size: 5vh;
+  width: 30%;
+  font-weight: 300;
+  text-align: right;
+  margin-left: 10%;
   position: absolute;
+  top: 20%;
 }
 
 .products__price {
+  color: #424242;
+  font-size: 2vh;
+  font-weight: 300;
+  text-align: right;
+  margin-left: 70%;
   position: absolute;
+  top: 70%;
+}
+
+.products__price::before {
+  content: "$";
+}
+
+.products__info {
+  position: relative;
+  text-align: center;
+  padding-left: 5%;
+}
+
+.products__img {
+  width: 100%;
 }
 
 .choose {
@@ -1120,6 +1097,19 @@
   height: 700px;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
+  padding-top: 10%;
+}
+
+.header__des {
+  background-image: url(/Imagenes/products/fondoDos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 700px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  padding-top: 10%;
 }
 
 .header__Store__info {
@@ -1140,6 +1130,19 @@
   text-shadow: 0px 0px 10px RGBA(0, 0, 0, 0.1);
 }
 
+.header__des__line {
+  color: white;
+  font-weight: 900;
+  text-shadow: 0px 0px 10px RGBA(0, 0, 0, 0.1);
+}
+
+.header__des__name {
+  color: white;
+  font-weight: 400;
+  font-size: 18pt;
+  text-shadow: 0px 0px 10px RGBA(0, 0, 0, 0.1);
+}
+
 .header__Store__text {
   font-weight: 300;
   width: 50%;
@@ -1151,8 +1154,19 @@
   padding-top: 4%;
 }
 
+.header__des__info {
+  text-align: center;
+  padding-top: 25%;
+}
+
 @media (min-width: 980px) {
   .header__Store__title {
+    font-weight: 400;
+    font-size: 35pt;
+    text-shadow: 0px 0px 10px RGBA(0, 0, 0, 0.1);
+  }
+  .header__des__name {
+    color: white;
     font-weight: 400;
     font-size: 35pt;
     text-shadow: 0px 0px 10px RGBA(0, 0, 0, 0.1);
@@ -1205,10 +1219,11 @@
 }
 
 .filter {
-  width: 20%;
+  position: fixed;
   color: black;
-  padding-left: 2%;
-  padding-top: 5%;
+  padding-left: 3%;
+  top: 25%;
+  z-index: -1000;
 }
 
 .filter__type {
@@ -1222,6 +1237,95 @@
 
 .filter__type__link {
   margin-top: 5%;
+}
+
+.nav__Store {
+  text-align: center;
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0%;
+  padding: 0%;
+  position: fixed;
+  width: 100%;
+  z-index: 50000;
+}
+
+.nav__Store__logo {
+  margin-left: 10%;
+  width: 8%;
+}
+
+.nav__Store__link {
+  font-weight: 300;
+  display: inline-block;
+  text-shadow: 0px 0px 10px RGBA(0, 0, 0, 0.1);
+  color: white;
+  padding-right: 2%;
+  font-size: 10px;
+}
+
+.nav__Store__banner {
+  margin-left: 5%;
+  width: 80%;
+  margin-top: 1.5%;
+}
+
+@media (min-width: 980px) {
+  .nav__Store__logo {
+    margin: 1%;
+    margin-left: 10%;
+    width: 8%;
+    height: auto;
+  }
+  .nav__Store__link {
+    font-weight: 300;
+    display: inline-block;
+    text-shadow: 0px 0px 10px RGBA(0, 0, 0, 0.1);
+    color: white;
+    padding-right: 10%;
+    font-size: 18px;
+  }
+  .nav__Store__car {
+    margin: 1%;
+    padding-right: 10%;
+    height: auto;
+  }
+}
+
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 45%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 5%;
+  text-align: center;
+  margin: auto;
+  margin-left: 20%;
+}
+
+.description__img {
+  width: 80%;
+}
+
+.description__info {
+  width: 20%;
+}
+
+.description__img__big {
+  width: 100%;
+}
+
+.description__img__small {
+  width: 20%;
+  text-align: left;
+}
+
+.description__img__small:hover {
+  -webkit-filter: blur(2px);
 }
 
 #header {

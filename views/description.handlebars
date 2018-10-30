@@ -25,23 +25,26 @@
         <img class="nav__Store__car" src="/Imagenes/products/carrito.png" alt="upsi">
     </nav>
 
-    <header class="header__Store">
+    <header class="header__des">
+        <div class="header__des__info">
+        <p class="header__des__line">________</p>
+        <h1 class="header__des__name">{{nombre}}</h1>
+        </div>
     </header>
 
-    <section>
-        <article>
-            <img src="{{imagen}}" alt="ups">
-             <img src="{{imagen}}" alt="ups">   
-            <img src="{{imagenDos}}" alt="">
-            <img src="{{imagenTres}}" alt="">
-            <img src="{{imagenCuatro}}" alt="">
+    <section class="description">
+        <article class="description__img">
+            <img class="description__img__big" src="{{imagen}}" alt="ups">
+             <img class="description__img__small" src="{{imagen}}" alt="ups">   
+            <img class="description__img__small" src="{{imagenDos}}" alt="">
+            <img class="description__img__small" src="{{imagenTres}}" alt="">
+            <img class="description__img__small" src="{{imagenCuatro}}" alt="">
         </article>
 
-        <article>
-        <h1 class="products__title">{{titulo}}</h1>
-
-            <h1>{{precio}}</h1>
-            <h2>unit</h2>
+        <article class="description__info">
+            <h1 class="description__info__title">{{titulo}}</h1>
+            <h1 class="description__info__price">{{precio}}</h1>
+            <h2 class="description__info__unit">unit</h2>
             <div>
                  <h1>Quantity</h1>
                  <input type="number" name="" id="">

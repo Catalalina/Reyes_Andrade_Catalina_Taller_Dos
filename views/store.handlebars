@@ -73,13 +73,13 @@
 
         <article class="products">
             {{#each products}}
+            
+            <div class="products__info"> 
+            <a href="/store/?product__name={{nombre}}"><img class="products__img" src={{imagen}} alt="upsi"></a> 
             <div class="products__pro">
-           <a href="/store/?product__name={{nombre}}"><img class="products__img" src={{imagen}} alt="upsi"></a> 
-            <div> 
             <h1 class="products__title">{{nombre}}</h1>
             <h1 class="products__price">{{precio}}</h1>
             </div>
-           
             </div>
             {{/each}}
         </article> 
