@@ -1,0 +1,39 @@
+.info{
+    margin: 0%;
+    padding: 0%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.info__products{
+    margin-left: 10%;
+    width: 40%;
+}
+
+.info__product{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info__info{
+    width:40%;
+}
+
+.info__products__product{
+    width: 50%;
+}
+
+.ejemplo{
+    width: 100%;;
+}
+
+.add_price{
+    padding-left: 50%;
+}
+
+.add_price::before{
+    content: "TOTAL"
+}

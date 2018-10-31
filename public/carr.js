@@ -23,7 +23,7 @@ window.addEventListener('load', function () {
             event.preventDefault();
 
             // console.log(elem.children('.products__price'));
-            let parent = elem.parentElement;
+            let parent = document.querySelector('.products__info');
 
             let product = {
                 product__name: parent.querySelector('h1').innerText,
@@ -57,5 +57,19 @@ window.addEventListener('load', function () {
     });
     // localStorage.setItem('shoppingCart', null);
 
+    var valor = 0; 
+    shoppingCart.forEach(function(elem){
+        var h = document.createElement('h1');
+        var h3 = document.createElement('h3');
+        h3.innerText = elem.product__price;
+        h.innerText = elem.product__name;
+        valor += parseInt(elem.product__price);
 
+        document.querySelector('.ejemplo').appendChild(h);
+        document.querySelector('.ejemplo2').appendChild(h3);
+    });
+
+    h2 = document.createElement('h2');
+    h2.innerText = valor;
+    document.querySelector('.add_price').appendChild(h2);
 });
